@@ -2,17 +2,17 @@
 #include <string.h>
 #include <stdlib.h>
 
-typedef struct
+typedef struct node
 {
     char *name;
     char *mail_address;
     char *tel_num;
+    node *next;
 }
-customer;
+node;
 
 int main(void)
 {
-    int data, datasize;
-    datasize = 20;
-    customer *data = malloc(sizeof(customer) * datasize);
+    node *customer = malloc(sizeof(node));
+    
 }
